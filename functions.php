@@ -13,3 +13,9 @@ function theme_add_bootstrap() {
     }
     
     add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
+
+    function add_features() {
+     add_theme_support('title-tag');
+      }
+      
+      add_action( 'after_setup_theme', 'add_features' );
