@@ -23,11 +23,31 @@ $theParent = wp_get_post_parent_id(get_the_ID());
         </div>
         <div class="col-sm-4">
             <ul class="list-group">
-                <li class="list-group-item active">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <?php
+$pages = get_pages();
+    foreach ($pages as $page) {?>
+                <?php
+if (get_page_link($page->ID) == get_permalink()) {?>
+                <!-- ==========html=============  -->
+                <li class="list-group-item active sidemenu">
+                    <a href="<?php echo get_page_link($page->ID) ?>">
+                        <?php echo $page->post_title; ?></a>
+                </li>
+
+                <!-- ==========html=============        -->
+                <?php
+} else {?>
+                <!-- ==========html=============  -->
+                <li class="list-group-item sidemenu">
+                    <a href="<?php echo get_page_link($page->ID) ?>">
+                        <?php echo $page->post_title; ?></a>
+                </li>
+                <?php }
+        ?>
+                <!-- ==========html=============        -->
+                <?php }
+    ?>
+
             </ul>
         </div>
     </div>

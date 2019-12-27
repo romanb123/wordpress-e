@@ -3,3 +3,11 @@ Theme Name:E Commerse THe
 Author:Roman b
 Version:1.0
 */
+.active>a{
+color: white;
+
+}
+.list-group-item  .sidemenu{
+    background-color: white;
+    color:blue;
+    }
