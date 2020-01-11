@@ -9,19 +9,13 @@
 
 <body>
     <nav class="navbar navbar-expand-sm bg-light">
-        <?php wp_nav_menu(array(
+        <?php
+$args = array(
     'theme location' => 'navbarmenu',
-    'walker' => new wp_bootstrap_navwalker(),
-))?>
-        <!-- <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url() ?>">home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url('/servises') ?>">servises</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">blog</a>
-            </li>
-        </ul> -->
+    'container' => 'ul',
+    'menu_class' => 'navbar-nav',
+    'add_li_class' => 'nav-item',
+);
+wp_nav_menu($args);
+?>
     </nav>

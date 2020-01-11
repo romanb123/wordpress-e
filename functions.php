@@ -18,9 +18,22 @@ function add_features()
 
 add_action('after_setup_theme', 'add_features');
 
-function add_menu_link_class($atts, $item, $args)
+// add class to list item of navbar
+
+function add_additional_class_on_li($classes, $item, $args)
 {
-    $atts['class'] = 'nav-link';
-    return $atts;
+    if (isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
 }
-add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+// add class to "a" item of navbar
+
+function _namespace_modify_menuclass($ulclass)
+{
+    return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+}
+
+add_filter('wp_nav_menu', '_namespace_modify_menuclass');
