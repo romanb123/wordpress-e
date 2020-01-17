@@ -17,10 +17,6 @@ while (have_posts()) {
             <a href="<?php the_permalink()?>" class="btn btn-primary">read more</a>
         </div>
     </div>
-
-
-
-
     <?php }
 
 ?>
