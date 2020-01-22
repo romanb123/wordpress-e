@@ -7,6 +7,18 @@ Version:1.0
     color: white;
 
 }
+.footermenu{
+    background-color: transparent;
+}
+.footermenu>a{
+color:black}
+
+.footer_image{
+    height: 80%;
+    width: 80%;
+
+}
+
 div.jumbotron.jumbotron-fluid
 {
     background-color: #20B2AA;
