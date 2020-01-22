@@ -28,7 +28,13 @@ function add_additional_class_on_li($classes, $item, $args)
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
-
+// add featerd image
+function wpdocs_setup_theme()
+{
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(150, 150);
+}
+add_action('after_setup_theme', 'wpdocs_setup_theme');
 // add class to "a" item of navbar
 
 function _namespace_modify_menuclass($ulclass)
