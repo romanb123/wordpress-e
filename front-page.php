@@ -80,30 +80,7 @@ wp_reset_postdata();
             <!-- ====================================================================== -->
             <!-- sidebar -->
             <!-- ====================================================================== -->
-            <?php
-$pages = get_pages();
-foreach ($pages as $page) {?>
-            <?php
-if (get_page_link($page->ID) == get_permalink()) {?>
-            <!-- ==========html=============  -->
-            <li class="list-group-item active sidemenu">
-                <a href="<?php echo get_page_link($page->ID) ?>">
-                    <?php echo $page->post_title; ?></a>
-            </li>
-
-            <!-- ==========html=============        -->
-            <?php
-} else {?>
-            <!-- ==========html=============  -->
-            <li class="list-group-item sidemenu">
-                <a href="<?php echo get_page_link($page->ID) ?>">
-                    <?php echo $page->post_title; ?></a>
-            </li>
-            <?php }
-    ?>
-            <!-- ==========html=============        -->
-            <?php }
-?>
+            <?php include 'sidebar.php';?>
             <!-- ====================================================================== -->
             <!-- sidebar -->
             <!-- ====================================================================== -->

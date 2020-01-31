@@ -7,6 +7,18 @@ Version:1.0
     color: white;
 
 }
+div.col-sm-3.sidebar_right 
+{
+text-align: center;
+}
+ .list-group-item.sidemenu 
+{
+    text-align: left;
+}
+.btn.btn-primary{
+    margin-top: 8px;
+}
+
 .footermenu{
     background-color: transparent;
 }
