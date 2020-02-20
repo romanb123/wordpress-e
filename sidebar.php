@@ -49,3 +49,4 @@ if (get_page_link($page->ID) == get_permalink()) {?>
         </div>
     </div>
 </div>
+<?php dynamic_sidebar( 'home_right_1' ); ?>
