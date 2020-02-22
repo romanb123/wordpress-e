@@ -3,82 +3,74 @@ Theme Name:E Commerse THe
 Author:Roman b
 Version:1.0
 */
+
 .active>a {
     color: white;
+}
 
+div.col-sm-3.sidebar_right {
+    text-align: center;
 }
-div.col-sm-3.sidebar_right 
-{
-text-align: center;
-}
- .list-group-item.sidemenu 
-{
+
+.list-group-item.sidemenu {
     text-align: left;
 }
-.btn.btn-primary{
+
+.btn.btn-primary {
     margin-top: 8px;
 }
 
-.footermenu{
+.footermenu {
     background-color: transparent;
 }
-.footermenu>a{
-color:black}
 
-.footer_image{
-    height: 80%;
-    width: 80%;
-
+.footermenu>a {
+    color: black
 }
 
-div.jumbotron.jumbotron-fluid
-{
+.footer_image {
+    height: 80%;
+    width: 80%;
+}
+
+div.jumbotron.jumbotron-fluid {
     background-color: #20B2AA;
     margin-bottom: 0px;
 }
-div.jumbotron.text-center.footer
-{
+
+div.jumbotron.text-center.footer {
     background-color: #20B2AA;
-  
-}
-a.card-link
-{
-    color:black;
-    font-weight: bold;
-}
-.resent_posts_home{
-   border:1px #483D8B solid;
-    color:black;
-    
+    width: 100%;
 }
 
-.col-sm-3.sidebar_right
-{
+a.card-link {
+    color: black;
+    font-weight: bold;
+}
+
+.resent_posts_home {
+    border: 1px #483D8B solid;
+    color: black;
+}
+
+.col-sm-3.sidebar_right {
     padding-right: 0px !important;
     padding-left: 0px !important;
     background-color: #483D8B;
     min-height: 600px !important;
-
-
-
 }
 
 .list-group-item.sidemenu {
     background-color: #483D8B;
     color: blue;
 }
-nav.navbar.navbar-expand-sm.bg-light
-{
-    background-color:#483D8B
-    !important;
+
+nav.navbar.navbar-expand-sm.bg-light {
+    background-color: #483D8B !important;
 }
 
-
-
 @media (max-width: 800px) {
-    .col-sm-3.sidebar_right
-    {
-        display:none;
-      
+    .col-sm-3.sidebar_right {
+        display: none;
     }
-  }
+}
