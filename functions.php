@@ -61,25 +61,4 @@ function arphabet_widgets_init() {
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
-// add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
-// function custom_override_checkout_fields($fields)
-// {
 
-//     $fields['order']['order_comments']['placeholder'] = 'My new placeholder';
-//     $fields['order']['your_field'] = array(
-//         'type' => 'select',
-//     );
-
-//     $x = 1;
-//     global $woocommerce;
-//     $items = $woocommerce->cart->get_cart();
-
-//     foreach ($items as $item => $values) {
-//         $_product = wc_get_product($values['data']->get_id());
-//         $fields['order']['your_field']['options']['option_' . $x] = $_product->get_title();
-//         $x++;
-
-//     }
-
-//     return $fields;
-// }

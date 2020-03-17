@@ -34,8 +34,12 @@ div.col-sm-3.sidebar_right {
 }
 
 div.jumbotron.jumbotron-fluid {
-    background-color: #20B2AA;
     margin-bottom: 0px;
+    height: 80vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(0, 255, 98, 0.459)), url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
 }
 
 div.jumbotron.text-center.footer {
