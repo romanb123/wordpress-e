@@ -10,7 +10,7 @@
 while (have_posts()) {
     the_post();?>
 
-            <div class="card  col-sm-3">
+            <div class="card  col-lg-4 col-md-6">
                 <img class="card-img-top" src="<?php the_post_thumbnail_url();?>" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title"><?php the_title()?></h4>

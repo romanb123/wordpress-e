@@ -19,7 +19,7 @@
 ));
 while ($Projects->have_posts()) {
     $Projects->the_post();?>
-                <div class="card resent_posts_home col-sm-3">
+                <div class="card resent_posts_home col-lg-4 col-md-6">
                     <div class="card-body">
                         <h4 class="card-title"><?php the_title()?></h4>
                         <p class="card-text"><?php echo wp_trim_words(get_the_content(), 17) ?></p>
@@ -60,7 +60,7 @@ $homepageposts = new WP_Query(array(
 
 while ($homepageposts->have_posts()) {
     $homepageposts->the_post()?>
-                <div class="card resent_posts_home col-sm-3">
+                <div class="card resent_posts_home col-lg-4 col-md-6">
                     <img class="card-img-top" src="<?php the_post_thumbnail_url();?>" alt="Card image"
                         style="width:100%">
                     <div class="card-body">
