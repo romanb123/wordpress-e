@@ -1,9 +1,9 @@
 <?php get_header();
 ?>
-<div class="jumbotron jumbotron-fluid">
-    <div class="main-text">
-        <h1 class="display-4">PORTFOLIO</h1>
-        <p class="lead">my portfolio</p>
+<div class="jumbotron jumbotron-fluid header">
+    <div class="header__main">
+        <h1 class="header__main--title">PORTFOLIO</h1>
+        <p class="header__main--subtitle">my portfolio</p>
     </div>
 </div>
 <div class="container-fluid">
@@ -11,7 +11,7 @@
         <div class="col-sm-9">
             <!-- ==========projects============= -->
             <h1>resent projects</h1>
-            <div class="row">
+            <div class="row projects_grid">
                 <?php $Projects = new WP_Query(array(
     'post_type' => 'project',
     'posts_per_page' => -1,
@@ -19,15 +19,15 @@
 ));
 while ($Projects->have_posts()) {
     $Projects->the_post();?>
-                <div class="card resent_posts_home col-lg-4 col-md-6">
+                <div class="card resent_posts_home col-lg-4 col-md-6 projects_grid__project">
                     <div class="card-body">
                         <h4 class="card-title"><?php the_title()?></h4>
                         <p class="card-text"><?php echo wp_trim_words(get_the_content(), 17) ?></p>
                         <p><?php the_field('skills')?></p>
-                        <a href="<?php the_field('repository')?>" class="btn btn-primary btn-lg active" role="button"
+                        <a href="<?php the_field('repository')?>" class="btn btn-primary btn-lg active postbutton" role="button"
                             aria-pressed="true">repository</a>
                         <?php if (get_field('url')) {?>
-                        <a href="<?php the_field('url')?>" class="btn btn-secondary btn-lg active" role="button"
+                        <a href="<?php the_field('url')?>" class="btn btn-primary btn-lg active postbutton" role="button"
                             aria-pressed="true">live</a>
                         <?php }?>
 
@@ -91,3 +91,4 @@ wp_reset_postdata();
 <?php
 get_footer();
 ?>
+
