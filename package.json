@@ -1,0 +1,22 @@
+{
+    "name": "wordpress-e",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass mainstyle.scss main_style.css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/romanb123/wordpress-e.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/romanb123/wordpress-e/issues"
+    },
+    "homepage": "https://github.com/romanb123/wordpress-e#readme",
+    "devDependencies": {
+        "node-sass": "^4.13.1"
+    }
+}

@@ -4,6 +4,26 @@ Author:Roman b
 Version:1.0
 */
 
+.lead {
+    animation-name: slidetextleft;
+    animation-duration: 2s;
+}
+
+.display-4 {
+    animation-name: slidetextright;
+    animation-duration: 2s;
+}
+
+.main-text {
+    letter-spacing: 13px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .active>a {
     color: white;
 }
@@ -39,7 +59,7 @@ div.jumbotron.jumbotron-fluid {
     background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(0, 255, 98, 0.459)), url(./background.jpg);
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 }
 
 div.jumbotron.text-center.footer {
@@ -71,6 +91,34 @@ a.card-link {
 
 nav.navbar.navbar-expand-sm.bg-light {
     background-color: #483D8B !important;
+}
+
+@keyframes slidetextright {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slidetextleft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 @media (max-width: 800px) {

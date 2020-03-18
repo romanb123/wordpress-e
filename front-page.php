@@ -1,7 +1,7 @@
 <?php get_header();
 ?>
 <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+    <div class="main-text">
         <h1 class="display-4">PORTFOLIO</h1>
         <p class="lead">my portfolio</p>
     </div>
