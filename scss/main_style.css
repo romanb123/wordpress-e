@@ -83,15 +83,19 @@
   background: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(0, 255, 98, 0.459));
   color: white; }
 
+.navigation__checkbox {
+  display: none; }
+
 .navigation__button {
-  height: 4rem;
-  width: 4em;
+  height: 3rem;
+  width: 3em;
   background-color: white;
   position: fixed;
   top: 6.5rem;
-  right: 6.5rem;
+  right: 2rem;
   border-radius: 50%;
-  z-index: 1200; }
+  z-index: 1200;
+  text-align: center; }
 
 .navigation__background {
   height: 3rem;
@@ -99,9 +103,79 @@
   border-radius: 50%;
   position: fixed;
   top: 6.5rem;
-  right: 6.5rem;
+  right: 2rem;
   background-image: radial-gradient(green, white);
-  z-index: 1000; }
+  z-index: 1000;
+  transition: transform 0.7s; }
+
+.navigation__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0;
+  width: 0;
+  transition: opacity 0.7s; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translateX(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation_link:link, .navigation_link:visited {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 240%;
+  transition: all 0.7s; }
+
+.navigation_link:hover, .navigation_link:active {
+  background-position: 100%;
+  color: black; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(25); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  transform: rotate(135deg);
+  top: 0; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  transform: rotate(-135deg);
+  top: 0; }
+
+.navigation__icon {
+  padding: 0;
+  margin-top: 1.3rem;
+  position: relative; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 1.4rem;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    transition: all 0.2s; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .navigation__icon::before {
+    top: -0.5rem; }
+  .navigation__icon::after {
+    top: 0.5rem; }
 
 .projects_grid__project {
   border-width: 0.5px black solid;
