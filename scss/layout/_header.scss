@@ -6,7 +6,7 @@
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
     &__main {
-        letter-spacing: 20px;
+        letter-spacing: 2em;
         color: $text-color;
         text-align: center;
         position: absolute;
@@ -14,7 +14,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         @media only screen and (max-width: 600px) {
-            letter-spacing: 5px;
+            letter-spacing: 10px;
         }
         &--title {
             animation-name: slidetextright;
@@ -24,6 +24,7 @@
             font-weight: 300;
             @media only screen and (max-width: 600px) {
                 animation-name: slidetextrightmobile;
+                font-size: 2.5rem;
             }
         }
         &--subtitle {
@@ -33,6 +34,7 @@
             font-weight: 300;
             @media only screen and (max-width: 600px) {
                 animation-name: slidetextleftmobile;
+                font-size: 1.25rem;
             }
         }
     }
