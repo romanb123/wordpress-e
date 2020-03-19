@@ -42,7 +42,7 @@ add_action('after_setup_theme', 'wpdocs_setup_theme');
 
 function _namespace_modify_menuclass($ulclass)
 {
-    return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+    return preg_replace('/<a /', '<a class="navigation_link"', $ulclass);
 }
 
 add_filter('wp_nav_menu', '_namespace_modify_menuclass');

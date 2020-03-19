@@ -1,11 +1,5 @@
 <?php get_header();
 ?>
-<div class="jumbotron jumbotron-fluid header">
-    <div class="header__main">
-        <h1 class="header__main--title">PORTFOLIO</h1>
-        <p class="header__main--subtitle">my portfolio</p>
-    </div>
-</div>
 <div class="container-fluid main-content">
     <div class="row">
         <div class="col-sm-9">

@@ -16,24 +16,22 @@
         </label>
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation_item"> <a href="dfdf" class="navigation_link">dfgdfg</a></li>
-                <li class="navigation_item"> <a href="dfdf" class="navigation_link">dfgdfg</a></li>
-                <li class="navigation_item"> <a href="dfdf" class="navigation_link">dfgdfg</a></li>
-                <li class="navigation_item"> <a href="dfdf" class="navigation_link">dfgdfg</a></li>
-                <li class="navigation_item"> <a href="dfdf" class="navigation_link">dfgdfg</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- navbar end -->
-    <nav class="navbar navbar-expand-sm bg-light navbar">
-        <?php
+            <?php
 $args = array(
     'theme location' => 'navbarmenu',
     'container' => 'ul',
-    'menu_class' => 'navbar-nav navbar__ulist',
-    'add_li_class' => 'nav-item navbar_ulist__item',
+    'menu_class' => ' navigation__list',
+    'add_li_class' => 'navigation_item',
 );
 wp_nav_menu($args);
 ?>
-    </nav>
+        </nav>
+    </div>
+    <div class="jumbotron jumbotron-fluid header">
+    <div class="header__main">
+        <h1 class="header__main--title">PORTFOLIO</h1>
+        <p class="header__main--subtitle">my portfolio</p>
+    </div>
+</div>
+    <!-- navbar end -->
+  
