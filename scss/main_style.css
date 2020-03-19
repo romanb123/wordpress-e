@@ -116,14 +116,14 @@
   width: 3em;
   background-color: white;
   position: fixed;
-  top: 3rem;
-  right: 1rem;
+  top: 1rem;
+  left: 1rem;
   border-radius: 50%;
   z-index: 1200;
   text-align: center; }
   @media only screen and (max-width: 600px) {
     .navigation__button {
-      right: 0.3rem;
+      left: 0.3rem;
       top: 0.3rem; } }
 
 .navigation__background {
@@ -131,31 +131,31 @@
   width: 3em;
   border-radius: 50%;
   position: fixed;
-  top: 3rem;
-  right: 1rem;
+  top: 1rem;
+  left: 1rem;
   background-image: radial-gradient(green, white);
   z-index: 1000;
-  transition: transform 0.7s; }
+  transition: transform 0.5s; }
   @media only screen and (max-width: 600px) {
     .navigation__background {
-      right: 0.3rem;
+      left: 0.3rem;
       top: 0.3rem; } }
 
 .navigation__nav {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 50vh;
   width: 100%;
   z-index: 1000;
   opacity: 0;
   width: 0;
-  transition: opacity 0.7s; }
+  transition: opacity 0.9s; }
 
 .navigation__list {
   position: absolute;
   top: 50%;
-  right: 25%;
+  left: 25%;
   transform: translateX(-50%, -50%);
   list-style: none;
   text-align: center; }
