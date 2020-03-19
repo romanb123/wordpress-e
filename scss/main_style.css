@@ -154,13 +154,7 @@
   border: 1px solid blue;
 }
 
-.main_sidebar {
-  text-align: center;
-}
-
-@media (max-width: 800px) {
-  .main_sidebar {
-    display: none;
-  }
+.main-content {
+  background: linear-gradient(176deg, white 20%, rgba(0, 128, 0, 0.6) 20% 40%, white 40%);
 }
 /*# sourceMappingURL=main_style.css.map */
