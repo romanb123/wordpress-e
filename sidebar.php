@@ -4,7 +4,7 @@ foreach ($pages as $page) {?>
 <?php
 if (get_page_link($page->ID) == get_permalink()) {?>
 <!-- ==========html=============  -->
-<li class="list-group-item active sidemenu">
+<li class="list-group-item  main_sidebar__pagelink--active">
     <a href="<?php echo get_page_link($page->ID) ?>">
         <?php echo $page->post_title; ?></a>
 </li>
@@ -13,7 +13,7 @@ if (get_page_link($page->ID) == get_permalink()) {?>
 <?php
 } else {?>
 <!-- ==========html=============  -->
-<li class="list-group-item sidemenu">
+<li class="list-group-item main_sidebar__pagelink">
     <a href="<?php echo get_page_link($page->ID) ?>">
         <?php echo $page->post_title; ?></a>
 </li>
@@ -25,7 +25,7 @@ if (get_page_link($page->ID) == get_permalink()) {?>
 <?php }
 ?>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary searchbutton" data-toggle="modal" data-target="#exampleModal">
     search
 </button>
 

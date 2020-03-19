@@ -8,13 +8,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-sm bg-light navbar">
         <?php
 $args = array(
     'theme location' => 'navbarmenu',
     'container' => 'ul',
-    'menu_class' => 'navbar-nav',
-    'add_li_class' => 'nav-item',
+    'menu_class' => 'navbar-nav navbar__ulist',
+    'add_li_class' => 'nav-item navbar_ulist__item',
 );
 wp_nav_menu($args);
 ?>

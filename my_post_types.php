@@ -1,11 +1,11 @@
 <?php
-
 function my_post_types()
 {
     register_post_type('project', array(
         'rewrite' => array('slug' => 'projects'),
         'has_archive' => true,
         'public' => true,
+        
         'labels' => array(
             'name' => 'Project',
             'add_new_item' => 'Add New project',
@@ -18,3 +18,4 @@ function my_post_types()
 }
 
 add_action('init', 'my_post_types');
+
