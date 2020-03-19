@@ -18,6 +18,20 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes slidetextrightmobile {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes slidetextleftmobile {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes navbaranimation {
   0% {
     opacity: 0; }
@@ -59,17 +73,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 600px) {
+      .header__main {
+        letter-spacing: 5px; } }
     .header__main--title {
       animation-name: slidetextright;
       animation-duration: 2s;
       font-size: 3.5rem;
       line-height: 1.2;
       font-weight: 300; }
+      @media only screen and (max-width: 600px) {
+        .header__main--title {
+          animation-name: slidetextrightmobile; } }
     .header__main--subtitle {
       font-size: 1.25rem;
       animation-name: slidetextleft;
       animation-duration: 2s;
       font-weight: 300; }
+      @media only screen and (max-width: 600px) {
+        .header__main--subtitle {
+          animation-name: slidetextleftmobile; } }
 
 .main_sidebar {
   text-align: center; }
@@ -91,22 +114,30 @@
   width: 3em;
   background-color: white;
   position: fixed;
-  top: 6.5rem;
-  right: 2rem;
+  top: 3rem;
+  right: 1rem;
   border-radius: 50%;
   z-index: 1200;
   text-align: center; }
+  @media only screen and (max-width: 600px) {
+    .navigation__button {
+      right: 0.3rem;
+      top: 0.3rem; } }
 
 .navigation__background {
   height: 3rem;
   width: 3em;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 2rem;
+  top: 3rem;
+  right: 1rem;
   background-image: radial-gradient(green, white);
   z-index: 1000;
   transition: transform 0.7s; }
+  @media only screen and (max-width: 600px) {
+    .navigation__background {
+      right: 0.3rem;
+      top: 0.3rem; } }
 
 .navigation__nav {
   position: fixed;
@@ -130,7 +161,7 @@
 .navigation_link:link, .navigation_link:visited {
   font-size: 1.5rem;
   font-weight: 300;
-  color: black;
+  color: white;
   text-decoration: none;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
   background-size: 240%;

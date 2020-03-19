@@ -7,22 +7,30 @@
         width: 3em;
         background-color: white;
         position: fixed;
-        top: 6.5rem;
-        right: 2rem;
+        top: 3rem;
+        right: 1rem;
         border-radius: 50%;
         z-index: 1200;
         text-align: center;
+        @media only screen and (max-width: 600px) {
+            right: 0.3rem;
+            top: 0.3rem;
+        }
     }
     &__background {
         height: 3rem;
         width: 3em;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 2rem;
+        top: 3rem;
+        right: 1rem;
         background-image: radial-gradient(green, white);
         z-index: 1000;
         transition: transform 0.7s;
+        @media only screen and (max-width: 600px) {
+            right: 0.3rem;
+            top: 0.3rem;
+        }
     }
     &__nav {
         position: fixed;
@@ -48,7 +56,7 @@
         &:visited {
             font-size: 1.5rem;
             font-weight: 300;
-            color: black;
+            color: white;
             text-decoration: none;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
             background-size: 240%;
