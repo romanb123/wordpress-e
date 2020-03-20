@@ -15,14 +15,19 @@ body {
 html {
     font-size: 89%;
     @include responsible(phone) {
+<<<<<<< HEAD
+        font-size: 66%;
+=======
+        font-size: 50%;
+        padding: 0 !important;
+>>>>>>> parent of 3d6719f... sdfsdfsdfs
+    }
+    @include responsible(tab) {
         font-size: 66%;
     }
-    // @include responsible(tab) {
-    //     font-size: 75%;
-    // }
-    // @include responsible(desktop) {
-    //     font-size: 89%;
-    // }
+    @include responsible(desktop) {
+        font-size: 89%;
+    }
 }
 
 =======

@@ -136,6 +136,7 @@
     &__list {
         position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
         top: 15%;
         left: 50%;
         transform: translateX(50%, 50%);
@@ -144,12 +145,13 @@
         right: 25%;
         transform: translateX(-50%, -50%);
 >>>>>>> parent of 00f8d5f... sdfsdfsdfdf
+=======
+        top: 50%;
+        left: 25%;
+        transform: translateX(-50%, -50%);
+>>>>>>> parent of 3d6719f... sdfsdfsdfs
         list-style: none;
         text-align: center;
-        @media (max-width: 600px)and(min-width: 200px) {
-            left: 45%;
-        }
-        ;
     }
     &_link {
         &:link,
@@ -169,7 +171,7 @@
         }
     }
     &__checkbox:checked~&__background {
-        transform: scale(50);
+        transform: scale(25);
     }
     &__checkbox:checked~&__nav {
         opacity: 1;
