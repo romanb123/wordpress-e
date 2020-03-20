@@ -43,7 +43,14 @@
     opacity: 1; } }
 
 body {
-  padding: 0; }
+  padding: 0;
+  max-width: 100%; }
+
+.row {
+  margin-right: 0; }
+
+.container-fluid {
+  padding-right: 0; }
 
 html {
   font-size: 89%; }
@@ -62,8 +69,7 @@ html {
 *::before,
 *::after {
   margin: 0;
-  padding: 0;
-  width: 100%; }
+  padding: 0; }
 
 .searchbutton {
   margin-top: 8px;

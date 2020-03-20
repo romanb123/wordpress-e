@@ -1,5 +1,14 @@
 body {
     padding: 0;
+    max-width: 100%;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.container-fluid {
+    padding-right: 0;
 }
 
 html {
@@ -21,6 +30,6 @@ html {
 *::after {
     margin: 0;
     padding: 0;
-    width: 100%;
+    // width: 100%;
     // box-sizing: inherit;
 }
