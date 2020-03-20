@@ -135,14 +135,23 @@ html {
   background-color: white;
   position: fixed;
   top: 3rem;
+<<<<<<< HEAD
   right: 3rem;
+=======
+  right: 1rem;
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
   border-radius: 50%;
   z-index: 1200;
   text-align: center; }
   @media only screen and (max-width: 600px) {
     .navigation__button {
+<<<<<<< HEAD
       right: 0.9rem;
       top: 0.9rem; } }
+=======
+      right: 0.3rem;
+      top: 0.3rem; } }
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
 
 .navigation__background {
   height: 3rem;
@@ -150,31 +159,46 @@ html {
   border-radius: 50%;
   position: fixed;
   top: 3rem;
+<<<<<<< HEAD
   right: 3rem;
+=======
+  right: 1rem;
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
   background-image: radial-gradient(green, white);
   z-index: 1000;
-  transition: transform 0.5s; }
+  transition: transform 0.7s; }
   @media only screen and (max-width: 600px) {
     .navigation__background {
+<<<<<<< HEAD
       right: 0.9rem;
       top: 0.9rem; } }
+=======
+      right: 0.3rem;
+      top: 0.3rem; } }
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
 
 .navigation__nav {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   height: 50vh;
   width: 100%;
   z-index: 1000;
   opacity: 0;
   width: 0;
-  transition: opacity 0.9s; }
+  transition: opacity 0.7s; }
 
 .navigation__list {
   position: absolute;
+<<<<<<< HEAD
   top: 15%;
   left: 50%;
   transform: translateX(50%, 50%);
+=======
+  top: 50%;
+  right: 25%;
+  transform: translateX(-50%, -50%);
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
   list-style: none;
   text-align: center; }
   @media (max-width: 600px) and (min-width: 200px) {
