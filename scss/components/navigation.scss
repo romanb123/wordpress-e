@@ -3,63 +3,19 @@
         display: none;
     }
     &__button {
+        border: rgb(94, 192, 121) 0.5px solid;
         height: 3rem;
         width: 3em;
         background-color: white;
         position: fixed;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         top: 3rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
         right: 3rem;
-=======
-        right: 1rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-=======
-        right: 1rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-=======
-        top: 1rem;
-        left: 1rem;
->>>>>>> parent of 008e947... dgfdfg
-=======
-        top: 1rem;
-        left: 1rem;
->>>>>>> parent of 008e947... dgfdfg
-=======
-        top: 3rem;
-        right: 1rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
         border-radius: 50%;
         z-index: 1200;
         text-align: center;
         @media only screen and (max-width: 600px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             right: 0.9rem;
             top: 0.9rem;
-=======
-=======
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-            right: 0.3rem;
-            top: 0.3rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-=======
-            left: 0.3rem;
-=======
-            right: 0.3rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-            top: 0.3rem;
->>>>>>> parent of 008e947... dgfdfg
-=======
-            left: 0.3rem;
-            top: 0.3rem;
->>>>>>> parent of 008e947... dgfdfg
         }
     }
     &__background {
@@ -67,89 +23,32 @@
         width: 3em;
         border-radius: 50%;
         position: fixed;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         top: 3rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
         right: 3rem;
-=======
-        right: 1rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-=======
-        right: 1rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-=======
-        top: 1rem;
-        left: 1rem;
->>>>>>> parent of 008e947... dgfdfg
-=======
-        top: 1rem;
-        left: 1rem;
->>>>>>> parent of 008e947... dgfdfg
-=======
-        top: 3rem;
-        right: 1rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
         background-image: radial-gradient(green, white);
         z-index: 1000;
-        transition: transform 0.7s;
+        transition: transform 0.5s;
         @media only screen and (max-width: 600px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             right: 0.9rem;
             top: 0.9rem;
-=======
-=======
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-            right: 0.3rem;
-            top: 0.3rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-=======
-            left: 0.3rem;
-=======
-            right: 0.3rem;
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-            top: 0.3rem;
->>>>>>> parent of 008e947... dgfdfg
-=======
-            left: 0.3rem;
-            top: 0.3rem;
->>>>>>> parent of 008e947... dgfdfg
         }
     }
     &__nav {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         height: 50vh;
         width: 100%;
         z-index: 1000;
         opacity: 0;
         width: 0;
-        transition: opacity 0.7s;
+        transition: opacity 0.9s;
     }
     &__list {
         position: absolute;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        top: 15%;
-        left: 50%;
-        transform: translateX(50%, 50%);
-=======
-        top: 50%;
-        right: 25%;
-        transform: translateX(-50%, -50%);
->>>>>>> parent of 00f8d5f... sdfsdfsdfdf
-=======
         top: 50%;
         left: 25%;
         transform: translateX(-50%, -50%);
->>>>>>> parent of 3d6719f... sdfsdfsdfs
         list-style: none;
         text-align: center;
     }
