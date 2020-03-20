@@ -136,7 +136,11 @@ html {
   position: fixed;
   top: 3rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
   right: 3rem;
+=======
+  right: 1rem;
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
 =======
   right: 1rem;
 >>>>>>> parent of 00f8d5f... sdfsdfsdfdf
@@ -146,9 +150,12 @@ html {
   @media only screen and (max-width: 600px) {
     .navigation__button {
 <<<<<<< HEAD
+<<<<<<< HEAD
       right: 0.9rem;
       top: 0.9rem; } }
 =======
+=======
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
       right: 0.3rem;
       top: 0.3rem; } }
 >>>>>>> parent of 00f8d5f... sdfsdfsdfdf
@@ -160,7 +167,11 @@ html {
   position: fixed;
   top: 3rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
   right: 3rem;
+=======
+  right: 1rem;
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
 =======
   right: 1rem;
 >>>>>>> parent of 00f8d5f... sdfsdfsdfdf
@@ -170,9 +181,12 @@ html {
   @media only screen and (max-width: 600px) {
     .navigation__background {
 <<<<<<< HEAD
+<<<<<<< HEAD
       right: 0.9rem;
       top: 0.9rem; } }
 =======
+=======
+>>>>>>> parent of 00f8d5f... sdfsdfsdfdf
       right: 0.3rem;
       top: 0.3rem; } }
 >>>>>>> parent of 00f8d5f... sdfsdfsdfdf
