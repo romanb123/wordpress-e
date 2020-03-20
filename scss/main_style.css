@@ -56,14 +56,8 @@ html {
   font-size: 89%; }
   @media (max-width: 600px) and (min-width: 200px) {
     html {
-      font-size: 50%;
+      font-size: 66%;
       padding: 0 !important; } }
-  @media (max-width: 900px) and (min-width: 600px) {
-    html {
-      font-size: 66%; } }
-  @media (min-width: 900px) {
-    html {
-      font-size: 89%; } }
 
 *,
 *::before,
@@ -96,28 +90,28 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) and (min-width: 200px) {
       .header__main {
-        letter-spacing: 10px; } }
+        letter-spacing: 1em; } }
     .header__main--title {
       animation-name: slidetextright;
       animation-duration: 2s;
       font-size: 3.5rem;
       line-height: 1.2;
       font-weight: 300; }
-      @media only screen and (max-width: 600px) {
+      @media (max-width: 600px) and (min-width: 200px) {
         .header__main--title {
-          animation-name: slidetextrightmobile;
-          font-size: 2.5rem; } }
+          font-size: 22px;
+          font-weight: 400; } }
     .header__main--subtitle {
       font-size: 1.25rem;
       animation-name: slidetextleft;
       animation-duration: 2s;
       font-weight: 300; }
-      @media only screen and (max-width: 600px) {
+      @media (max-width: 600px) and (min-width: 200px) {
         .header__main--subtitle {
-          animation-name: slidetextleftmobile;
-          font-size: 1.25rem; } }
+          font-size: 16px;
+          padding: 0 !important; } }
 
 .main_sidebar {
   text-align: center; }
@@ -178,11 +172,14 @@ html {
 
 .navigation__list {
   position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translateX(-50%, -50%);
+  top: 15%;
+  left: 50%;
+  transform: translateX(50%, 50%);
   list-style: none;
   text-align: center; }
+  @media (max-width: 600px) and (min-width: 200px) {
+    .navigation__list {
+      left: 45%; } }
 
 .navigation_link:link, .navigation_link:visited {
   font-size: 1.5rem;
@@ -198,7 +195,7 @@ html {
   color: black; }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(25); }
+  transform: scale(50); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -236,6 +233,8 @@ html {
 
 .projects_grid__project {
   border-width: 0.5px black solid;
+  padding-right: 0px;
+  padding-left: 0px;
   max-width: 250px;
   margin-left: 40px;
   margin-bottom: 40px; }

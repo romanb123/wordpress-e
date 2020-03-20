@@ -13,8 +13,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @media only screen and (max-width: 600px) {
-            letter-spacing: 10px;
+        @include responsible(phone) {
+            letter-spacing: 1em;
         }
         &--title {
             animation-name: slidetextright;
@@ -22,9 +22,9 @@
             font-size: 3.5rem;
             line-height: 1.2;
             font-weight: 300;
-            @media only screen and (max-width: 600px) {
-                animation-name: slidetextrightmobile;
-                font-size: 2.5rem;
+            @include responsible(phone) {
+                font-size: 22px;
+                font-weight: 400;
             }
         }
         &--subtitle {
@@ -32,9 +32,9 @@
             animation-name: slidetextleft;
             animation-duration: 2s;
             font-weight: 300;
-            @media only screen and (max-width: 600px) {
-                animation-name: slidetextleftmobile;
-                font-size: 1.25rem;
+            @include responsible(phone) {
+                font-size: 16px;
+                padding: 0 !important;
             }
         }
     }

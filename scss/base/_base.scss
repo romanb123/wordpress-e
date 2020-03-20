@@ -14,15 +14,15 @@ body {
 html {
     font-size: 89%;
     @include responsible(phone) {
-        font-size: 50%;
+        font-size: 66%;
         padding: 0 !important;
     }
-    @include responsible(tab) {
-        font-size: 66%;
-    }
-    @include responsible(desktop) {
-        font-size: 89%;
-    }
+    // @include responsible(tab) {
+    //     font-size: 75%;
+    // }
+    // @include responsible(desktop) {
+    //     font-size: 89%;
+    // }
 }
 
 *,
