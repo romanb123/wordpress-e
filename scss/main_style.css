@@ -42,11 +42,28 @@
   100% {
     opacity: 1; } }
 
+body {
+  padding: 0; }
+
+html {
+  font-size: 89%; }
+  @media (max-width: 600px) and (min-width: 200px) {
+    html {
+      font-size: 50%;
+      padding: 0 !important; } }
+  @media (max-width: 900px) and (min-width: 600px) {
+    html {
+      font-size: 66%; } }
+  @media (min-width: 900px) {
+    html {
+      font-size: 89%; } }
+
 *,
 *::before,
 *::after {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
 
 .searchbutton {
   margin-top: 8px;
@@ -112,34 +129,35 @@
   display: none; }
 
 .navigation__button {
+  border: #5ec079 0.5px solid;
   height: 3rem;
   width: 3em;
   background-color: white;
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 3rem;
+  right: 3rem;
   border-radius: 50%;
   z-index: 1200;
   text-align: center; }
   @media only screen and (max-width: 600px) {
     .navigation__button {
-      left: 0.3rem;
-      top: 0.3rem; } }
+      right: 0.9rem;
+      top: 0.9rem; } }
 
 .navigation__background {
   height: 3rem;
   width: 3em;
   border-radius: 50%;
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 3rem;
+  right: 3rem;
   background-image: radial-gradient(green, white);
   z-index: 1000;
   transition: transform 0.5s; }
   @media only screen and (max-width: 600px) {
     .navigation__background {
-      left: 0.3rem;
-      top: 0.3rem; } }
+      right: 0.9rem;
+      top: 0.9rem; } }
 
 .navigation__nav {
   position: fixed;

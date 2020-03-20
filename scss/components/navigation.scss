@@ -3,18 +3,19 @@
         display: none;
     }
     &__button {
+        border: rgb(94, 192, 121) 0.5px solid;
         height: 3rem;
         width: 3em;
         background-color: white;
         position: fixed;
-        top: 1rem;
-        left: 1rem;
+        top: 3rem;
+        right: 3rem;
         border-radius: 50%;
         z-index: 1200;
         text-align: center;
         @media only screen and (max-width: 600px) {
-            left: 0.3rem;
-            top: 0.3rem;
+            right: 0.9rem;
+            top: 0.9rem;
         }
     }
     &__background {
@@ -22,14 +23,14 @@
         width: 3em;
         border-radius: 50%;
         position: fixed;
-        top: 1rem;
-        left: 1rem;
+        top: 3rem;
+        right: 3rem;
         background-image: radial-gradient(green, white);
         z-index: 1000;
         transition: transform 0.5s;
         @media only screen and (max-width: 600px) {
-            left: 0.3rem;
-            top: 0.3rem;
+            right: 0.9rem;
+            top: 0.9rem;
         }
     }
     &__nav {

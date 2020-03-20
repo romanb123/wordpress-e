@@ -1,7 +1,26 @@
+body {
+    padding: 0;
+}
+
+html {
+    font-size: 89%;
+    @include responsible(phone) {
+        font-size: 50%;
+        padding: 0 !important;
+    }
+    @include responsible(tab) {
+        font-size: 66%;
+    }
+    @include responsible(desktop) {
+        font-size: 89%;
+    }
+}
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
+    width: 100%;
     // box-sizing: inherit;
 }
