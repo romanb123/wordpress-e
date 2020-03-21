@@ -14,20 +14,20 @@
 while ($Projects->have_posts()) {
     $Projects->the_post();?>
                 <div class="card resent_posts_home col-lg-4 col-md-6 projects_grid__project">
-                    <div class="card-body">
-                        <h4 class="card-title"><?php the_title()?></h4>
-                        <p class="card-text"><?php echo wp_trim_words(get_the_content(), 17) ?></p>
-                        <p><?php the_field('skills')?></p>
-                        <a href="<?php the_field('repository')?>" class="btn btn-primary btn-lg active postbutton" role="button"
-                            aria-pressed="true">repository</a>
-                        <?php if (get_field('url')) {?>
-                        <a href="<?php the_field('url')?>" class="btn btn-primary btn-lg active postbutton" role="button"
-                            aria-pressed="true">live</a>
-                        <?php }?>
-
-
-
-                    </div>
+                    <h4 class="card-title projects_grid__project__title">
+                        <?php the_title()?>
+                    </h4>
+                    <p class="card-text projects_grid__project__text">
+                        <?php echo wp_trim_words(get_the_content(), 17) ?>
+                    </p>
+                    <p class="card-text projects_grid__project__skills">
+                        <?php the_field('skills')?>
+                    </p>
+                    <span class="projects_grid__project__buttons"> <a href="<?php the_field('repository')?>" class="btn btn-primary btn-lg active postbutton" role="button" aria-pressed="true">repository</a>
+                    <?php if (get_field('url')) {?>
+                    <a href="<?php the_field('url')?>" class="btn btn-primary btn-lg active postbutton" role="button" aria-pressed="true">live</a>
+                    <?php }?></span>
+                    <div class="projects_grid__project__closing"></div>
                 </div>
                 <?php }?>
 
@@ -54,16 +54,19 @@ $homepageposts = new WP_Query(array(
 
 while ($homepageposts->have_posts()) {
     $homepageposts->the_post()?>
-                <div class="card resent_posts_home col-lg-4 col-md-6 postsgrid_post">
-                    <img class="card-img-top" src="<?php the_post_thumbnail_url();?>" alt="Card image"
-                        style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title"><?php the_title()?></h4>
-                        <p class="card-text"><?php echo wp_trim_words(get_the_content(), 17) ?></p>
-                        <a href="<?php the_permalink()?>" class="card-link postsgrid__fullpost">full post</a>
+                    <div class="card resent_posts_home col-lg-4 col-md-6 postsgrid_post">
+                        <img class="card-img-top" src="<?php the_post_thumbnail_url();?>" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <?php the_title()?>
+                            </h4>
+                            <p class="card-text">
+                                <?php echo wp_trim_words(get_the_content(), 17) ?>
+                            </p>
+                            <a href="<?php the_permalink()?>" class="card-link postsgrid__fullpost">full post</a>
+                        </div>
                     </div>
-                </div>
-                <?php }
+                    <?php }
 wp_reset_postdata();
 ?>
             </div>
@@ -85,4 +88,3 @@ wp_reset_postdata();
 <?php
 get_footer();
 ?>
-

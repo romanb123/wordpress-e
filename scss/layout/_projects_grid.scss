@@ -1,8 +1,44 @@
 .projects_grid {
+    padding-bottom: 40px;
+    position: relative;
     &__project {
-        border-width: 0.5px black solid;
-        max-width: 250px;
-        margin-left: 40px;
+        padding: 0;
+        text-align: center;
+        color: black;
+        // border-width: 0.5px white solid;
+        max-width: 270px;
+        margin-left: 33px;
         margin-bottom: 40px;
+        height: 25rem;
+        &__title {
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            font-size: 1.8em;
+            height: 50px;
+            right: 1px;
+            left: 1px;
+            position: absolute;
+            background-color: rgb(102, 179, 102);
+            margin-bottom: 0;
+        }
+        &__text {
+            font-size: 1.5em;
+            padding-top: 25%;
+        }
+        &__skills {
+            font-size: 1.5em;
+        }
+        &__buttons {
+            margin-bottom: 200px;
+            z-index: 100;
+        }
+        &__closing {
+            background-color: rgb(102, 179, 102);
+            height: 50px;
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+            position: absolute;
+            bottom: 0;
+            right: 1px;
+            left: 1px;
+        }
     }
 }

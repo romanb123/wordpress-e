@@ -1,6 +1,6 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
-@import "base/animations.scss";
+@import "base/animations";
 @import "base/base";
 @import "components/searchbutton";
 @import "components/postbutton";
@@ -10,4 +10,4 @@
 @import "components/navigation";
 @import "layout/projects_grid";
 @import "layout/postsgrid";
-@import "layout/main-content.scss";
+@import "layout/main-content";

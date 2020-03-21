@@ -36,7 +36,7 @@
     &__nav {
         position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         height: 50vh;
         width: 100%;
         z-index: 1000;
@@ -46,8 +46,8 @@
     }
     &__list {
         position: absolute;
-        top: 50%;
-        left: 25%;
+        top: 30%;
+        right: 50%;
         transform: translateX(-50%, -50%);
         list-style: none;
         text-align: center;
@@ -55,7 +55,7 @@
     &_link {
         &:link,
         &:visited {
-            font-size: 1.5rem;
+            font-size: 3rem;
             font-weight: 300;
             color: white;
             text-decoration: none;
@@ -70,7 +70,7 @@
         }
     }
     &__checkbox:checked~&__background {
-        transform: scale(25);
+        transform: scale(75);
     }
     &__checkbox:checked~&__nav {
         opacity: 1;

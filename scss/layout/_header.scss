@@ -6,35 +6,41 @@
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
     &__main {
-        letter-spacing: 2em;
         color: $text-color;
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @media only screen and (max-width: 600px) {
-            letter-spacing: 10px;
-        }
         &--title {
+            letter-spacing: 0.7em;
             animation-name: slidetextright;
             animation-duration: 2s;
-            font-size: 3.5rem;
+            font-size: 4rem;
             line-height: 1.2;
             font-weight: 300;
-            @media only screen and (max-width: 600px) {
-                animation-name: slidetextrightmobile;
+            @include responsible(phone) {
+                letter-spacing: 0.1em;
+                font-size: 3rem;
+            }
+            @include responsible(tab) {
+                letter-spacing: 1em;
                 font-size: 2.5rem;
             }
         }
         &--subtitle {
-            font-size: 1.25rem;
+            letter-spacing: 0.7em;
+            font-size: 2.5rem;
             animation-name: slidetextleft;
             animation-duration: 2s;
             font-weight: 300;
-            @media only screen and (max-width: 600px) {
-                animation-name: slidetextleftmobile;
-                font-size: 1.25rem;
+            @include responsible(phone) {
+                letter-spacing: 0.1em;
+                font-size: 1.7rem;
+            }
+            @include responsible(tab) {
+                letter-spacing: 1em;
+                font-size: 2rem;
             }
         }
     }
