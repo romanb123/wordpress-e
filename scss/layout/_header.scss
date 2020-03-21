@@ -3,7 +3,9 @@
     height: 80vh;
     background-image: linear-gradient(to right bottom, rgba(41, 151, 255, 0.6), rgba(86, 67, 250, 0.459)), url(../background.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
     &__main {
         color: $text-color;

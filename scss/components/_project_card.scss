@@ -1,7 +1,7 @@
 .project_card {
     perspective: 150rem;
     position: relative;
-    height: 60rem;
+    height: 50rem;
     // margin-bottom: 30rem;
     &__side {
         box-shadow: 0 1.5rem 4rem rgba(black, .15);
@@ -17,7 +17,10 @@
             background-color: white;
         }
         &--back {
-            background-image: linear-gradient(to right bottom, rgb(41, 151, 255), rgb(86, 67, 250));
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to right bottom, rgba(77, 117, 155, 0.6), rgba(86, 67, 250, 0.4)), url('../background.jpg');
             transform: rotateY(180deg);
         }
     }
@@ -28,11 +31,14 @@
         transform: rotateY(0);
     }
     &__image {
+        margin-bottom: 1em;
         clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-        height: 23rem;
-        background-blend-mode: color-dodge;
+        height: 12rem;
+        // background-blend-mode: color-dodge;
+        background-attachment: fixed;
+        background-position: center;
         background-size: cover;
-        background-image: linear-gradient(to right bottom, rgba(77, 117, 155, 0.6), rgba(86, 67, 250, 0.4)), url('../card-image.jpg');
+        background-image: linear-gradient(to right bottom, rgba(77, 117, 155, 0.6), rgba(86, 67, 250, 0.4)), url('../background.jpg');
     }
     &__heading {
         font-size: 1.8rem;
@@ -49,10 +55,30 @@
         background-image: linear-gradient(to right bottom, rgba(77, 117, 155, 0.6), rgba(86, 67, 250, 0.4)), url('../card-image.jpg');
     }
     &__details {
-        padding: 3rem;
-        margin-bottom: 12rem;
+        margin-top: 1rem;
+        margin-bottom: 0.1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         font-size: 1.5rem;
-        border-bottom: 1px solid grey;
-        height: 11rem;
+        height: 9rem;
+    }
+    &__skills {
+        text-align: center;
+    }
+    &__buttons__front {
+        text-align: center;
+    }
+    &__buttons__back {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center !important;
+    }
+    &__backtitle {
+        font-size: 6em;
+        font-weight: 100;
     }
 }

@@ -17,11 +17,32 @@
                 <div class="project_card__details">
                     tetailsdfgdfg fgfdg fgfdgfgfdgfgfdg fgfdg fgfdg fgfdg
                 </div>
+                <div class="project_card__skills">
+                    <ul>
+                        <li>3 day tours</li>
+                        <li>Up to 30 people</li>
+                        <li>2 tour guides</li>
+                        <li>Sleep in cozy hotels</li>
+                        <li>Up to 30 people</li>
+                        <li>2 tour guides</li>
+                        <li>Sleep in cozy hotels</li>
+                        <li>Difficulty: easy</li>
+                    </ul>
+                </div>
+                <div class="project_card__buttons__front">
+                    <a href="#popup" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
             </div>
             <div class="project_card__side project_card__side--back">
-                back
+                
+                <div class="project_card__buttons__back">
+                    <div class="project_card__backtitle">backtitle</div>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
             </div>
         </div>
-
     </div>
+
 </div>
