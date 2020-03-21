@@ -46,12 +46,6 @@ body {
   padding: 0;
   max-width: 100%; }
 
-.row {
-  margin-right: 0; }
-
-.container-fluid {
-  padding-right: 0; }
-
 html {
   font-size: 89%; }
   @media (max-width: 600px) and (min-width: 200px) {
@@ -70,6 +64,54 @@ html {
   margin: 0;
   padding: 0; }
 
+.project_card {
+  perspective: 150rem;
+  position: relative;
+  height: 60rem; }
+  .project_card__side {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40rem;
+    width: 100%;
+    transition: all 0.5s;
+    overflow: hidden; }
+    .project_card__side--front {
+      background-color: white; }
+    .project_card__side--back {
+      background-image: linear-gradient(to right bottom, #2997ff, #5643fa);
+      transform: rotateY(180deg); }
+  .project_card:hover .project_card__side--front {
+    transform: rotateY(-180deg); }
+  .project_card:hover .project_card__side--back {
+    transform: rotateY(0); }
+  .project_card__image {
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    height: 23rem;
+    background-blend-mode: color-dodge;
+    background-size: cover;
+    background-image: linear-gradient(to right bottom, rgba(77, 117, 155, 0.6), rgba(86, 67, 250, 0.4)), url("../card-image.jpg"); }
+  .project_card__heading {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    position: absolute;
+    top: 2%;
+    right: 40%; }
+  .project_card__heading__span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(77, 117, 155, 0.6), rgba(86, 67, 250, 0.4)), url("../card-image.jpg"); }
+  .project_card__details {
+    padding: 3rem;
+    margin-bottom: 12rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid grey;
+    height: 11rem; }
+
 .searchbutton {
   margin-top: 8px;
   color: white; }
@@ -85,7 +127,7 @@ html {
 .header {
   margin-bottom: 0px;
   height: 80vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(0, 255, 98, 0.459)), url(../background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(41, 151, 255, 0.6), rgba(86, 67, 250, 0.459)), url(../background.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%); }
@@ -164,7 +206,7 @@ html {
   position: fixed;
   top: 3rem;
   right: 3rem;
-  background-image: radial-gradient(green, white);
+  background-image: radial-gradient(#2997ff, #5643fa);
   z-index: 1000;
   transition: transform 0.5s; }
   @media only screen and (max-width: 600px) {
@@ -241,45 +283,16 @@ html {
   .navigation__icon::after {
     top: 0.5rem; }
 
-.projects_grid {
+.projects_section {
   padding-bottom: 40px;
-  position: relative; }
-  .projects_grid__project {
-    padding: 0;
+  padding: 40px;
+  background-color: #f7f7f7;
+  margin-top: -10rem; }
+  .projects_section__heading {
+    width: 100%;
     text-align: center;
-    color: black;
-    max-width: 270px;
-    margin-left: 33px;
-    margin-bottom: 40px;
-    height: 25rem; }
-    .projects_grid__project__title {
-      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-      font-size: 1.8em;
-      height: 50px;
-      right: 1px;
-      left: 1px;
-      position: absolute;
-      background-color: #66b366;
-      margin-bottom: 0; }
-    .projects_grid__project__text {
-      font-size: 1.5em;
-      padding-top: 25%; }
-    .projects_grid__project__skills {
-      font-size: 1.5em; }
-    .projects_grid__project__buttons {
-      margin-bottom: 200px;
-      z-index: 100; }
-    .projects_grid__project__closing {
-      background-color: #66b366;
-      height: 50px;
-      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-      position: absolute;
-      bottom: 0;
-      right: 1px;
-      left: 1px; }
+    margin-top: 10rem;
+    margin-bottom: 10rem; }
 
 .postsgrid_post {
   border: 1px solid blue; }
-
-.main-content {
-  background: linear-gradient(176deg, white 20%, rgba(0, 128, 0, 0.6) 20% 40%, white 40%); }
