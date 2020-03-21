@@ -1,5 +1,8 @@
 .footer {
     width: 100%;
-    background: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(0, 255, 98, 0.459));
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right bottom, rgba(41, 151, 255, 0.6), rgba(86, 67, 250, 0.459)), url(../background.jpg);
     color: white;
 }

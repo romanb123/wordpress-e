@@ -1,4 +1,4 @@
-<div class="jumbotron " style="margin-bottom:0">
+<div class="jumbotron footer" style="margin-bottom:0">
     <div class="row">
         <div class="col-sm-6 footer__section1">
             <h3>contact us</h3>

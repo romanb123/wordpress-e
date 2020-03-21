@@ -41,14 +41,16 @@
         background-image: linear-gradient(to right bottom, rgba(77, 117, 155, 0.6), rgba(86, 67, 250, 0.4)), url('../background.jpg');
     }
     &__heading {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         font-weight: 300;
         color: white;
         position: absolute;
         top: 2%;
-        right: 40%;
+        left: 40%;
     }
     &__heading__span {
+        margin-left: 0;
+        margin-right: 0;
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
