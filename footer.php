@@ -23,5 +23,5 @@ foreach ($posts as $post) {?>
     </p>
 </footer>
 </body>
-
+<?php wp_footer();?>
 </html>
