@@ -1,29 +1,43 @@
-<?php $Projects = new WP_Query(array(
-    'post_type' => 'project',
-    'posts_per_page' => -1,
-));
-while ($Projects->have_posts()) {
-    $Projects->the_post();?>
+<?php get_header();
+?>
 
+<div class="row">
 
+    <!-- =============posts section====================== -->
+    <div class="col-sm-9">
+        <h2> blog </h2>
+        <div class="row"> <?php
+while (have_posts()) {
+    the_post();?>
 
+            <div class="card  col-lg-4 col-md-6">
+                <img class="card-img-top" src="<?php the_post_thumbnail_url();?>" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title"><?php the_title()?></h4>
+                    <p class="card-text"><?php the_excerpt()?></p>
+                    <a href="<?php the_permalink()?>" class="btn btn-primary">read more</a>
+                </div>
+            </div>
+            <?php }
 
+?></div>
 
+    </div>
+    <!-- =============posts section====================== -->
+    <div class="col-sm-3 sidebar_right">
+        <h1 style="color:white">all posts</h1>
+        <!-- ====================================================================== -->
+        <!-- sidebar -->
+        <!-- ====================================================================== -->
+        <?php include 'posts-sidebar.php';?>
+        <!-- ====================================================================== -->
+        <!-- sidebar -->
+        <!-- ====================================================================== -->
+    </div>
 
-                <!-- <div class="card  projects_grid__project">
-                        <h4 class="card-title projects_grid__project__title">
-                            <!-- <?php the_title()?> -->
-                        <!-- </h4>
-                        <p class="card-text projects_grid__project__text">
-                        <?php echo wp_trim_words(get_the_content(), 17) ?>
-                        </p>
-                        <p class="card-text projects_grid__project__skills">
-                            <?php the_field('skills')?>
-                        </p>
-                        <span class="projects_grid__project__buttons"> <a href="<?php the_field('repository')?>" class="btn btn-primary btn-lg active postbutton" role="button" aria-pressed="true">repository</a>
-                    <?php if (get_field('url')) {?>
-                    <a href="<?php the_field('url')?>" class="btn btn-primary btn-lg active postbutton" role="button" aria-pressed="true">live</a>
-                    <?php }?></span>
-                        <div class="projects_grid__project__closing"></div>
-                    </div> -->
-                <?php }?> -->
+</div>
+<?php echo paginate_links();
+?>
+<?php
+get_footer();
+?>
