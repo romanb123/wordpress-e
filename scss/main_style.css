@@ -230,7 +230,6 @@ html {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%); }
   .header__main {
     color: white;
@@ -485,3 +484,36 @@ html {
   .sidebar__list__link:hover, .sidebar__list__link:visited:hover {
     color: #101d2c;
     text-decoration: none; }
+
+#wpcf7-f146-o1 {
+  text-align: center;
+  padding: 4.5rem;
+  width: 70%; }
+  @media only screen and (max-width: 1116px) {
+    #wpcf7-f146-o1 {
+      width: 70%; }
+      #wpcf7-f146-o1 input {
+        width: 100%; }
+      #wpcf7-f146-o1 textarea {
+        width: 100%; } }
+  @media only screen and (max-width: 1116px) {
+    #wpcf7-f146-o1 {
+      padding: 1rem;
+      width: 70%; } }
+
+.contact-row {
+  margin-top: -67px;
+  padding: 13rem;
+  background-image: radial-gradient(#2997ff, #5643fa); }
+  @media only screen and (max-width: 1116px) {
+    .contact-row {
+      padding-right: 1rem;
+      padding-left: 1rem; } }
+
+.contact-section {
+  background-image: linear-gradient(105deg, rgba(41, 151, 255, 0.6) 0%, rgba(41, 151, 255, 0.6) 70%, transparent 70%), url(../background.jpg);
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 1116px) {
+    .contact-section {
+      background-image: linear-gradient(105deg, rgba(41, 151, 255, 0.6) 0%, rgba(41, 151, 255, 0.6) 76%, transparent 76%), url(../background.jpg); } }

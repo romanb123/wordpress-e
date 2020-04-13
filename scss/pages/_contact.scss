@@ -1,0 +1,45 @@
+#wpcf7-f146-o1{
+    text-align: center;
+    @media only screen and (max-width: 1116px) {
+        width: 70%;
+      input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;   
+    }  
+    }  
+ 
+padding: 4.5rem;
+width:70%;
+@media only screen and (max-width: 1116px) {
+    padding: 1rem;
+    width:70%;
+}  
+
+}
+.contact-row{
+    margin-top: -67px;
+    padding: 13rem;
+    background-image: radial-gradient(rgb(41, 151, 255), rgb(86, 67, 250));
+    @media only screen and (max-width: 1116px) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }  
+}
+.contact-section{
+    background-image: linear-gradient(105deg,
+     rgba(41, 151, 255, 0.6) 0%,
+     rgba(41, 151, 255, 0.6) 70%,
+     transparent 70%),
+      url(../background.jpg);
+    background-size: cover;
+    background-position: center;  
+    @media only screen and (max-width: 1116px) {
+        background-image: linear-gradient(105deg,
+        rgba(41, 151, 255, 0.6) 0%,
+        rgba(41, 151, 255, 0.6) 76%,
+        transparent 76%),
+         url(../background.jpg);
+    }  
+}
